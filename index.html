@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-picture">
+      <div class="header-content">
+        <h1>Shan Khyle Punzalan
+        </h1>
+        <p>BS Information Technology Student
+        </p>
+        <p>Former Child
+        </p>
+      </div>
+      
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="section hobby">
+        <h2>Hobbies</h2>
+        <div class="hobby-gallery">
+          <img src="hob1.png" alt="Hobby 1">
+          <img src="hob2.jpg" alt="Hobby 2">
+          <img src="hob3.png" alt="Hobby 3">
+        </div>
+      </section>
+      
+
+    <section class="section media">
+      <h2>Favourite Movies/Shows</h2>
+      <div class="media-gallery">
+      <img src="med1.png" alt="Breaking Bad">
+      <img src="med2.png" alt="Inglorious Basterds">
+      <img src="med3.png" alt="Bladerunner 2049">  
+      </div>
+    </section>
+
+    <section class="section programming">
+      <h2>Favourite Programming Language</h2>
+      <p>HTML</p>
+      <p>PHP</p>
+      <p>Java</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2>Contact Me</h2><hr>
+      <ul class="contact-info">
+        <li><a href="shankhylepunzalan@gmail.com">Email: shankhylepunzalan@gmail.com</a></li>
+        <li>Phone: 911</li>
+        <hr>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
+  </script>
+
+</body>
+</html>

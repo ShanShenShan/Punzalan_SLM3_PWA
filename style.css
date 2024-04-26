@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;  /* Modern Sans-serif font */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 15px;
+    font-weight: normal;
+  }
+  
+  p {
+    line-height: 1.6;
+    font-size: 16px;  /* Adjust body text size */
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #999;
+    text-decoration: underline;
+  }
+  
+  
+  /* Header Styles */
+  .header {
+    background-color: #fff;  /* White background for header */
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+    font-family: "Oswald", sans-serif;  /* Bold font for headings */
+  }
+  
+  .profile-picture {
+    width: 180px;
+    border-radius: 50%;
+    margin: 20px 0;
+  }
+  
+  
+  /* Main Styles */
+  .main {
+    padding-bottom: 60px;
+  }
+  
+  .section {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  
+  .section:last-child {
+    border-bottom: none;
+  }
+  
+  .section h2 {
+    font-size: 1.8rem;  /* Adjust heading size */
+    font-family: "Poppins", sans-serif;  /* Consistent font for sections */
+  }
+  
+/* Media Gallery Styles (adjustments) */
+.media-gallery,  /* Target both media and hobby galleries */
+.hobby-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.media-gallery img,  /* Target both media and hobby gallery images  */
+.hobby-gallery img {
+  margin-bottom: 15px;
+  width: calc(33% - 20px);  /* Adjust width for desired number of columns */
+  border-radius: 5px;
+  transition: transform 0.3s ease;  /* Add hover effect transition */
+}
+
+.media-gallery img:hover,  /* Target both media and hobby gallery images on hover */
+.hobby-gallery img:hover {
+  transform: scale(1.05);  /* Slight zoom on hover */
+}
+
+
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 5px;
+  }
+  
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px 10px;
+    }
+  
+    .profile-picture {
+      width: 150px;
+    }
+  
+    .media-gallery img {
+      width: 48%;
+    }
+  
+    .section {
+      padding-bottom: 10px;
+    }
+  
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
